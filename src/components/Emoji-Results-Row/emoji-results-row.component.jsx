@@ -1,5 +1,5 @@
 // Import
-import React from 'react';
+import React, { memo } from 'react';
 import PropTypes from 'prop-types';
 
 // Import - Styles
@@ -26,4 +26,4 @@ EmojiReultsRow.propTypes = {
 };
 
 // Export
-export default EmojiReultsRow;
+export default memo(EmojiReultsRow);

@@ -1,5 +1,5 @@
 // Import
-import React, { useEffect } from 'react';
+import React, { useEffect, memo } from 'react';
 import PropTypes from 'prop-types';
 
 // Import - Clipboard
@@ -45,4 +45,4 @@ EmojiResults.propTypes = {
 };
 
 // Export
-export default connect(mapStateToProps)(EmojiResults);
+export default connect(mapStateToProps)(memo(EmojiResults));
